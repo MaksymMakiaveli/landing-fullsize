@@ -1,0 +1,27 @@
+@import 'src/styles/functions';
+@import 'src/styles/variables';
+
+.header {
+  border-bottom: 1px solid #eae8f3;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 26px 50px;
+    padding: get-clamp-size($media-xs, 26px, 22px) get-clamp-size($media-xs, 50px, 34px);
+  }
+
+  &-logo-wrapper {
+    flex: 1 1 auto;
+  }
+
+  &-list-wrapper {
+    flex: 1 1 auto;
+  }
+
+  &-actions-wrapper {
+    flex: 1 1 auto;
+  }
+}

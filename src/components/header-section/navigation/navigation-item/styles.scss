@@ -1,0 +1,13 @@
+@import 'src/styles/variables';
+
+.navigation-item {
+  font-size: $font-size-nav;
+
+  &-link {
+    color: $color-primary;
+
+    &:visited {
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import 'src/styles/variables';
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+
+  width: 17.4rem;
+  height: 13.7rem;
+
+  text-align: center;
+  border-radius: 6.606px;
+  border: 0.661px solid #f4f4f4;
+  background: #fff;
+  box-shadow: 0px 13.211169242858887px 26.422338485717773px 0px rgba(0, 0, 0, 0.06);
+
+  span {
+    color: $color-primary;
+  }
+
+  &-label {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+
+    &-suffix {
+      display: inline-block;
+      font-size: 1.8rem;
+      padding-bottom: 15px;
+    }
+  }
+
+  &-name {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}

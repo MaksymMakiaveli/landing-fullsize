@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@components": [
+        "./src/components"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@repositories/*": [
+        "./src/repositories/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@constants": [
+        "./src/constants"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@hooks": [
+        "./src/hooks"
+      ],
+      "@models": [
+        "./src/models"
+      ],
+      "@contexts": [
+        "./src/contexts"
+      ],
+      "@variables": [
+        "./src/styles/variables.module.scss"
+      ],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@features/*": [
+        "./src/features/*"
+      ],
+      "@layouts": [
+        "./src/layouts"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ]
+    }
+  }
+}

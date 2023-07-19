@@ -1,0 +1,73 @@
+@import 'functions';
+
+@mixin adaptive-font(
+  $mediaWidth,
+  $maxFontSize,
+  $minFontSize,
+  $lineHeight: 120%,
+  $fontWeight: 400,
+  $isFlexibleLineHeight: true
+) {
+  font-size: get-clamp-size($mediaWidth, $maxFontSize, $minFontSize);
+  @if $isFlexibleLineHeight {
+    line-height: get-clamp-size($mediaWidth, $lineHeight, calc(#{$lineHeight} * 0.7));
+  } @else {
+    line-height: $lineHeight;
+  }
+  font-weight: $fontWeight;
+}
+
+@mixin ellipsis-text($width: 99.99%) {
+  max-width: $width;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: clip;
+}
+
+@mixin ellipsis-multi-text($clamp-line: 3, $max-width: 99.99%) {
+  display: -webkit-box;
+  max-width: $max-width;
+  -webkit-line-clamp: $clamp-line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin transition(
+  $transition-name: all,
+  $transition-duration: 0.2s,
+  $transition-type: ease,
+  $transition-delay: 0s
+) {
+  transition: $transition-name $transition-duration $transition-type $transition-delay;
+}
+
+@mixin media_base {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin media_2k {
+  @media (min-width: 1921px) {
+    @content;
+  }
+}
+
+@mixin media_md {
+  @media (max-width: 1441px) {
+    @content;
+  }
+}
+
+@mixin media_sm {
+  @media (max-width: 1367px) {
+    @content;
+  }
+}
+
+@mixin media_xs {
+  @media (max-width: 1281px) {
+    @content;
+  }
+}

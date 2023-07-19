@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+
+.product-section {
+  &-wrapper {
+    padding-top: 127px;
+  }
+
+  &-header {
+    text-align: center;
+  }
+
+  &-title {
+    font-size: 5rem;
+    color: $color-primary;
+    font-weight: 700;
+  }
+
+  &-subtitle {
+    padding-top: 34px;
+
+    font-size: 2rem;
+    color: $color-primary;
+  }
+
+  &-body {
+    padding-top: 21px;
+    display: flex;
+  }
+
+  &-left {
+    flex: 0 0 51.9%;
+  }
+
+  &-right {
+    flex: 0 0 48.1%;
+
+    display: flex;
+    justify-content: center;
+  }
+}

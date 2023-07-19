@@ -1,0 +1,12 @@
+@import 'src/styles/functions';
+@import 'src/styles/variables';
+
+.navigation {
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: get-clamp-size($media-sm, 78px, 32px);
+  }
+}

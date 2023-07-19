@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+@import 'src/styles/functions';
+@import 'src/styles/mixins';
+
+.ui-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding: get-clamp-size($media-xs, 16px, 12px) 4px;
+
+  text-align: center;
+
+  box-shadow: $shadow-btn-primary;
+  border-radius: 4px;
+
+  &-label {
+    font-size: $font-size-button;
+
+    @include ellipsis-text();
+  }
+
+  &--primary {
+    background-color: $color-primary;
+
+    .ui-button-label {
+      color: $color-white;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-white;
+
+    .ui-button-label {
+      color: $color-primary;
+    }
+  }
+}

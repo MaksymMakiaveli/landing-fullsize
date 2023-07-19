@@ -1,0 +1,18 @@
+.hero-section {
+  &-wrapper {
+    padding-top: 34px;
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-left {
+    flex: 0 0 41.69%;
+  }
+
+  &-right {
+    flex: 0 0 58.31%;
+  }
+}
